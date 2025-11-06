@@ -11,7 +11,7 @@ Zero-config pre-commit formatter and linter. Automatically detects and uses your
 - 🎯 **Zero configuration** - Uses your existing `.prettierrc` and `.eslintrc`
 - 🚫 **Blocks bad commits** - Linting errors prevent commits (warnings don't)
 - ⚡ **Lightning fast** - Only processes staged files
-- 🪶 **Tiny** - 20KB with zero dependencies
+- 🪶 **Tiny** - ~ 11.5KB with zero dependencies
 - 🔄 **Auto-formats** - Formats code and re-stages files automatically
 
 ## Installation

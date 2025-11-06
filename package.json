@@ -1,7 +1,7 @@
 {
   "name": "auto-format-staged",
   "version": "1.0.0",
-  "description": "Zero-config pre-commit formatter and linter. Automatically detects and uses your project's Prettier and ESLint.",
+  "description": "Zero-config pre-commit formatter and linter. Installs in 30 seconds, uses your existing Prettier & ESLint setup. No config files needed.",
   "main": "src/index.js",
   "bin": {
     "auto-format-staged": "bin/install.js"

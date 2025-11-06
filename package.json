@@ -1,0 +1,51 @@
+{
+  "name": "auto-format-staged",
+  "version": "1.0.0",
+  "description": "Zero-config pre-commit formatter and linter. Automatically detects and uses your project's Prettier and ESLint.",
+  "main": "src/index.js",
+  "bin": {
+    "auto-format-staged": "bin/install.js"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "git",
+    "pre-commit",
+    "prettier",
+    "eslint",
+    "formatter",
+    "linter",
+    "zero-config"
+  ],
+  "author": "Ahmed Zrouqui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmedzrouqui/auto-format-staged.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmedzrouqui/auto-format-staged/issues"
+  },
+  "homepage": "https://github.com/ahmedzrouqui/auto-format-staged#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "peerDependencies": {
+    "prettier": ">=2.0.0",
+    "eslint": ">=7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "prettier": {
+      "optional": true
+    },
+    "eslint": {
+      "optional": true
+    }
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md"
+  ]
+}

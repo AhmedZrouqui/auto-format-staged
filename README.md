@@ -15,6 +15,8 @@ Zero-config pre-commit formatter and linter. Automatically detects and uses your
 - 🔄 **Auto-formats** - Formats code and re-stages files automatically
 
 ## Installation
+
+### Quick Start (For You)
 ```bash
 npm install --save-dev auto-format-staged
 npx auto-format-staged
@@ -27,6 +29,22 @@ git add test.js
 git commit -m "test"
 # ✨ File automatically formatted before commit!
 ```
+
+### Recommended Setup (For Teams)
+
+The quick start is great, but it only installs the hook for you. Your teammates would have to remember to run `npx auto-format-staged` after cloning.
+
+For a fully automated setup that works for everyone, add a `postinstall` script to your project's `package.json`:
+```json
+{
+    "name": "my-cool-project",
+    "scripts": {
+        "postinstall": "npx auto-format-staged"
+    }
+}
+```
+
+Now, every time any developer runs `npm install`, it will automatically run your setup script and ensure the hook is installed.
 
 Every commit will:
 1. Lint staged files (errors block commit, warnings don't)
